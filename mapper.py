@@ -25,8 +25,8 @@ for line in sys.stdin:
         # searches if there is needed attribute in tag dict and checks its value
     if 'building:levels' in tag:
         if tag['building:levels'] >= 3:
-            print building
+            return building
     # searches if there is needed attribute in tag dict and checks its value
     elif 'height' in tag:
         if tag['height'] > 10:
-            print building
+            return building
